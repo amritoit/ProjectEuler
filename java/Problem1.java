@@ -5,9 +5,9 @@
 // Email:  amritoit@gmail.com
 // Organization:  IIT Madras
 // Created: Sat Feb 27 11:58:58 2016 (+0530)
-// Last-Updated: Sat Feb 27 12:11:43 2016 (+0530)
+// Last-Updated: Sat Feb 27 23:25:48 2016 (+0530)
 //           By: amritendu
-//     Update #: 18
+//     Update #: 19
 // 
 
 public class Problem1{
@@ -25,9 +25,9 @@ public class Problem1{
         int mulOf5=n/5;
         int mulOf15=n/15;
         
-        int sumOf3=3*(mulOf3*(mulOf3+1))/2;
-        int sumOf5=5*(mulOf5*(mulOf5+1))/2;
-        int sumOf15=15*(mulOf15*(mulOf15+1))/2;
+        int sumOf3=3*(mulOf3*(mulOf3+1))>>1;
+        int sumOf5=5*(mulOf5*(mulOf5+1))>>1;
+        int sumOf15=15*(mulOf15*(mulOf15+1))>>!;
         
         return sumOf3+sumOf5-sumOf15;
 
