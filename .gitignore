@@ -1,3 +1,5 @@
 *.class
 *.*#
 .#*
+python/*
+!python/*.py
