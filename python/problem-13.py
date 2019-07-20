@@ -1,5 +1,6 @@
 # problem:  https://projecteuler.net/problem=13
-# the catch is we cant cast to int data type, then python will type case to int instead bigint.
+# this can be done in python as it can handle biginteger,
+# this can be done by implimentation string addition functoin.
 
 numbers = [
     37107287533902102798797998220837590246510135740250,
@@ -109,6 +110,6 @@ def compute(numbers):
 
 import time
 start_time = time.time()
-print("compute for 500, result =", compute(numbers), ", time taken - ", (time.time() - start_time), " seconds")
+print("compute for all loaded numbers, result =", compute(numbers), ", time taken - ", (time.time() - start_time), " seconds")
 assert compute(numbers) == "5537376230"
 print("all test passed")
