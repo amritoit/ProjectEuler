@@ -12,6 +12,9 @@
 # problem: https://projecteuler.net/problem=15
 import mylib
 
+# solution 1
+# calculating the path recursivley and memize the overlapping sub problems.
+
 
 @mylib.memoize
 def no_of_path_in_grid(m, n):
@@ -28,6 +31,9 @@ assert no_of_path_in_grid(20, 20) == 137846528820
 print("Bingo! all test passed")
 
 # solution 2
+# This is a classic combinatorics problem. To get from the top left corner to the bottom right corner of an N*N grid,
+# it involves making exactly N moves right and N moves down in some order. Because each individual down or right move
+# is indistinguishable, there are exactly 2N choose N (binomial coefficient) ways of arranging these moves.
 
 
 def compute():
