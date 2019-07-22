@@ -32,3 +32,15 @@ class memoize(object):
 def binomial(n, k):
     assert 0 <= k <= n
     return math.factorial(n) // (math.factorial(k) * math.factorial(n - k))
+
+
+def is_leap_year(year):  # if the input year is a leap year or not
+    if (year % 4) == 0:
+        if (year % 100) == 0:
+            if (year % 400) == 0:
+                return True
+            else:
+                return False
+        else:
+            return True
+    return False
