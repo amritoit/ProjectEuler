@@ -34,6 +34,10 @@ def binomial(n, k):
     return math.factorial(n) // (math.factorial(k) * math.factorial(n - k))
 
 
+def factorial(n):
+    return math.factorial(n)
+
+
 def is_leap_year(year):  # if the input year is a leap year or not
     if (year % 4) == 0:
         if (year % 100) == 0:
